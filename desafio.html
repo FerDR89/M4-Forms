@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fernando de Row" />
+    <meta
+      name="keywords"
+      content="Formularios, aprender a crear formularios y su interacción"
+    />
+    <meta name="description" content="Documento de práctica de Formularios" />
+    <meta name="robots" content="index,follow" />
+
+    <link rel="stylesheet" href="./desafio.css" />
+    <script defer src="./desafio.js"></script>
+
+    <title>Práctica de formularios</title>
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section class="section-main-container">
+        <form class="form">
+          <fieldset class="fieldset-name">
+            <label class="label-input-name">
+              Nombre
+              <input type="text" name="name" class="input-text-name" />
+            </label>
+          </fieldset>
+          <fieldset class="fieldset-select">
+            <label class="label-input-select"
+              >Hasta el momento. ¿Qué es lo que más te gusto de nuestros
+              contenidos?
+              <select name="options-select" class="input-select">
+                <option value="1">Lecciones teóricas</option>
+                <option value="2">Lecciones prácticas</option>
+                <option value="3">Desafíos</option>
+                <option value="4">Nada</option>
+                <option value="5">No sabe, no contesta</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset class="fieldset-radio-buttons">
+            <legend class="parragraph-radio-button">Preferís estudiar:</legend>
+            <label class="label-radio-button"
+              >De día
+              <input type="radio" name="options-button" value="day" />
+            </label>
+            <label class="label"
+              >De noche
+              <input type="radio" name="options-button" value="night" />
+            </label>
+          </fieldset>
+          <fieldset class="fieldset-checkbox">
+            <legend class="parragraph-checkbox">
+              ¿Cuales fueron los temas más complejos hasta hora?
+            </legend>
+            <div class="checkbox-content">
+              <input
+                type="checkbox"
+                name="options-checkbox"
+                id="promises"
+                value="promises"
+              />
+              <label for="promises">Promesas</label>
+            </div>
+            <div class="checkbox-content">
+              <input
+                type="checkbox"
+                name="options-checkbox"
+                id="functions"
+                value="functions"
+              />
+              <label for="functions">Funciones</label>
+            </div>
+            <div class="checkbox-content">
+              <input
+                type="checkbox"
+                name="options-checkbox"
+                id="class"
+                value="class"
+              />
+              <label for="class">Clases</label>
+            </div>
+            <div class="checkbox-content">
+              <input
+                type="checkbox"
+                name="options-checkbox"
+                id="typescript"
+                value="typescript"
+              />
+              <label for="typescript">TypeScript</label>
+            </div>
+          </fieldset>
+          <div class="div-button">
+            <button class="button">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
