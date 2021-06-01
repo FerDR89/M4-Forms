@@ -12,7 +12,17 @@
     <meta name="description" content="Documento de práctica de Formularios" />
     <meta name="robots" content="index,follow" />
 
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Stylesheets-->
     <link rel="stylesheet" href="./desafio.css" />
+
+    <!--Scripts-->
     <script defer src="./desafio.js"></script>
 
     <title>Práctica de formularios</title>
@@ -23,28 +33,39 @@
 
     <main>
       <section class="section-main-container">
+        <div class="container-form-h2">
+          <h2 class="form-h2">Formulario de contacto</h2>
+        </div>
         <form class="form">
-          <fieldset class="fieldset-name">
-            <label class="label-input-name">
+          <fieldset class="fieldset-name fieldset-style-border">
+            <label class="label-input-name" for="input-text-name">
               Nombre
-              <input type="text" name="name" class="input-text-name" />
             </label>
+            <input
+              type="text"
+              name="name"
+              class="input-text-name"
+              id="input-text-name"
+            />
           </fieldset>
-          <fieldset class="fieldset-select">
-            <label class="label-input-select"
-              >Hasta el momento. ¿Qué es lo que más te gusto de nuestros
-              contenidos?
-              <select name="options-select" class="input-select">
-                <option value="1">Lecciones teóricas</option>
-                <option value="2">Lecciones prácticas</option>
-                <option value="3">Desafíos</option>
-                <option value="4">Nada</option>
-                <option value="5">No sabe, no contesta</option>
-              </select>
+          <fieldset class="fieldset-select fieldset-style-border">
+            <label class="label-input-select" for="options-select"
+              >¿Qué es lo que más te gusta de nuestros contenidos?
             </label>
+            <select
+              name="options-select"
+              class="input-select"
+              id="options-select"
+            >
+              <option value="1">Lecciones teóricas</option>
+              <option value="2">Lecciones prácticas</option>
+              <option value="3">Desafíos</option>
+              <option value="4">Nada</option>
+              <option value="5">No sabe, no contesta</option>
+            </select>
           </fieldset>
-          <fieldset class="fieldset-radio-buttons">
-            <legend class="parragraph-radio-button">Preferís estudiar:</legend>
+          <fieldset class="fieldset-radio-buttons fieldset-style-border">
+            <p class="parragraph-radio-button">Preferís estudiar:</p>
             <label class="label-radio-button"
               >De día
               <input type="radio" name="options-button" value="day" />
@@ -54,10 +75,10 @@
               <input type="radio" name="options-button" value="night" />
             </label>
           </fieldset>
-          <fieldset class="fieldset-checkbox">
-            <legend class="parragraph-checkbox">
+          <fieldset class="fieldset-checkbox fieldset-style-border">
+            <p class="parragraph-checkbox">
               ¿Cuales fueron los temas más complejos hasta hora?
-            </legend>
+            </p>
             <div class="checkbox-content">
               <input
                 type="checkbox"
