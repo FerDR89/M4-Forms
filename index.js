@@ -1,9 +1,9 @@
 const handleEvent = (event) => {
   event.preventDefault();
   const data = new FormData(event.target);
-  const value = Object.fromEntries(data.entries());
-  value.optionsCheckbox = data.getAll("optionsCheckbox");
-  console.log(event.target);
+  const objeto = Object.fromEntries(data.entries());
+  objeto.optionsCheckbox = data.getAll("optionsCheckbox");
+  console.log(objeto);
 };
 
 const formListener = () => {
